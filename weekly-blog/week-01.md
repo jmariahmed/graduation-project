@@ -44,7 +44,7 @@ This makes me interested in how technology could support people with lower digit
 
 ## Question 5 — What single sentence do I want on my project page?
 
-How can AI be developed and used safely and responsibly in today's world, while ensuring that its rapid development does not outpace humanity's ability to regulate and control its impact, while still allowing technology and innovation to continue advancing?
+How can AI be developed and used safely and responsibly in today's world, while ensuring that its rapid development does not outpace humanity's ability to regulate and control its impact, without hindering continued technological advancement and innovation?
 
 ## Project Seed
 
