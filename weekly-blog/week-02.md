@@ -1,4 +1,4 @@
-# Week 2 — Critical Studies: Research and Design for the Graduation Project
+# Week 2 — Critical Studies: Literature Review
 
 ## 1. Project Direction
 
