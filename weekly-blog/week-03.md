@@ -28,6 +28,11 @@ The installation could use clear visualisations, relevant statistics and real ex
 
 It could highlight realistic actions communities can take while acknowledging that infrastructure, working conditions and urban planning also affect people's exposure to heat. The aim would be to show that collective action can make a meaningful difference without suggesting that responsibility for the entire crisis falls on individuals.
 
+## Initial Research Mind Map
+
+This mind map created on Figma brings together my initial research into extreme heat in Athens, including the communities affected, barriers to collective action, existing approaches and potential opportunities for creative engagement. This visual mind map brings together the key themes, ideas and questions surrounding extreme heat in Athens, helping me organise the information and identify connections between community experiences, existing approaches and opportunities for collective action.
+![Mind map exploring extreme heat and communities in Athens](week-03-athens-heat-mindmap.png)
+
 ## Next Steps
 
-I want to explore how an interactive installation could bring together scientific data, lived experiences and community knowledge. I am particularly interested in whether technology could help people feel more connected to their communities and more capable of taking action, rather than leaving them feeling overwhelmed by the scale of the problem.
+The HeatLab discussions made me think about how creative technology can help people and communities access information, share knowledge and feel more confident taking action, rather than becoming overwhelmed by complex issues. This connects to my own thesis idea of developing accessible software to help non-technical users, particularly older adults, distinguish AI-generated content from human-created content, exploring how technology can improve digital understanding, reduce confusion and help people make more informed decisions in an increasingly AI-driven society. I am particularly interested in whether technology could help people feel more connected to their communities and more capable of taking action, rather than leaving them feeling overwhelmed by the scale of the problem.
