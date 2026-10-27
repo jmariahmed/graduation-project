@@ -1,1 +1,69 @@
+# ClaimTrail: A Multilingual Chrome Extension for Tracing the Evolution of Online Information
+
+## 1. Introduction and research question
+
+Online information increasingly crosses languages, platforms and formats, making it difficult for everyday users to understand where a claim originated and whether its meaning has changed. For people who use English as an additional language, evaluating information can be particularly challenging. Muda et al. (2023), in two preregistered experiments involving 570 participants, found that proficient bilinguals were less accurate at distinguishing true from false news when reading in a foreign language.
+
+My proposed project, **ClaimTrail**, is a Chrome extension that combines multilingual evidence retrieval, retrieval-augmented generation (RAG) and interactive visualisation to help users investigate claims without leaving the webpage they are reading. Its intended coverage is English plus more than 30 additional languages. Users will be able to explore related versions of a claim, compare changes in wording and meaning, examine supporting sources and inspect available AI-origin signals.
+
+**Research question:** How does an interactive, multilingual claim-history interface affect non-specialist users’ ability to understand changes in online claims across sources and languages, compared with a conventional fact-checking summary?
+
+## 2. Research context and potential contribution
+
+The proposed project builds on research demonstrating that misinformation can evolve across linguistic boundaries. Quelle et al. (2025) analysed 264,487 fact-checks across 95 languages, using multilingual sentence embeddings to connect semantically similar claims. Their findings provide a foundation for investigating how claim relationships and changes can be made understandable to readers through an interactive interface.
+
+Existing browser tools also demonstrate the value of evidence-based investigation. FactCheck Radar describes a Chrome extension that retrieves sources across languages and presents its findings in English, while OpenErrata provides AI-assisted investigations and inline corrections on supported platforms (FactCheck Radar, n.d.; OpenErrata, n.d.).
+
+ClaimTrail will build on these approaches by focusing on **how claims develop**. Its central interface will present an evidence-linked history showing related versions, publication dates and changes in meaning. The intended contribution is to investigate whether this visual approach helps users understand relationships between claims more effectively than a conventional fact-checking summary. The literature and competitor review will be used to refine this potential research gap before implementation.
+
+## 3. Proposed design and technical approach
+
+ClaimTrail will operate through a Chrome side panel. Users will select a claim from a webpage, after which the extension will retrieve relevant sources and identify potentially related versions. A timeline or graph will connect the versions, while a comparison view will highlight differences in wording, interpretation and evidence. Users will be able to open original sources and read explanations in their preferred language.
+
+The technical architecture will combine multilingual semantic retrieval with RAG. Lewis et al. (2020) describe RAG as an approach that combines language generation with retrieved external knowledge, providing a relevant foundation for generating explanations grounded in source material. For ClaimTrail, retrieval results and source metadata will be passed to the generation component so that explanations can reference the evidence used.
+
+To support English and more than 30 additional languages, the implementation will investigate multilingual embedding models rather than developing a separate retrieval system for every language. Feng et al. (2022) introduced Language-Agnostic BERT Sentence Embedding (LaBSE), which supports cross-lingual sentence embeddings across 109 languages. This makes it a relevant candidate for identifying similar claims even when they use different wording or scripts. Language coverage will nevertheless need to be tested, since model support does not guarantee equally reliable retrieval in every language.
+
+A separate panel will present available AI-origin evidence, including Content Credentials and relevant metadata. The C2PA specification explains that provenance data can record information about content creation and modification, while provenance alone cannot establish whether information is factually accurate (C2PA, n.d.). ClaimTrail will therefore allow users to consider origin evidence alongside, but separately from, the assessment of a claim.
+
+## 4. Methodology and evaluation
+
+The project will use iterative prototyping and a mixed-method exploratory evaluation.
+
+First, I will conduct a focused literature and competitor review covering multilingual misinformation, semantic retrieval, provenance and information visualisation. I will then compile a curated dataset of claims with documented versions, dates and source links. This will provide reference material against which retrieval and claim-history relationships can be checked.
+
+Second, I will develop the Chrome extension, retrieval pipeline and interactive history view. Technical testing will assess whether relevant sources are retrieved, related claims are identified appropriately, and displayed connections are supported by the underlying evidence.
+
+The system will target English and 30+ additional languages, while the evaluation will examine a representative subset in depth, including Bengali, Arabic, Hindi, Spanish and French. This approach preserves the breadth of the proposed system while making testing manageable within the graduation project. Retrieval will be assessed using a manually reviewed reference set, source relevance and precision among the highest-ranked results. Explanation quality will be checked for faithful representation of sources, clarity of language and accurate presentation of claim differences.
+
+Finally, I will conduct exploratory usability sessions with multilingual non-specialist users. Participants will compare a conventional fact-checking summary with ClaimTrail’s interactive history. Tasks will assess whether they can identify changes in meaning, locate supporting evidence and distinguish documented relationships from possible similarities. Task performance and participant feedback will inform iterative improvements. The findings will establish the prototype’s usefulness within the study conditions rather than claim universal effectiveness.
+
+## 5. Social responsibility and sustainability
+
+Accessibility is central to the project. Clear explanations, language selection and direct access to original sources will help users investigate information without requiring specialist technical knowledge. Since retrieval quality may vary by language, evaluation will consider how well the system supports the selected languages and communicate uncertainty where evidence is limited.
+
+Privacy will be addressed by analysing content at the user’s request, minimising data collection and clearly explaining any external processing. The interface will present evidence and uncertainty transparently to support informed human judgement. Computational demand will be managed through targeted retrieval, caching where appropriate and a curated evaluation dataset, reducing unnecessary generation and repeated searches.
+
+## 6. Project plan and intended outcome
+
+Development will proceed through five stages: literature and competitor review; preparation of the claim-history dataset; implementation of multilingual retrieval and the Chrome interface; technical and user testing; and final evaluation and documentation.
+
+The intended outcome is a functional proof-of-concept extension targeting English and 30+ additional languages, supported by an evaluation of retrieval quality and explanation clarity across a representative language sample. The project will contribute a tested interaction design and evidence about how visualising the evolution of online claims can support multilingual users’ understanding of information.
+
+## References
+
+C2PA (n.d.) *C2PA and Content Credentials Explainer*. Version 2.4. Available at: https://spec.c2pa.org/specifications/specifications/2.4/explainer/Explainer.html (Accessed: 27 October 2026).
+
+FactCheck Radar (n.d.) *How it works*. Available at: https://www.factcheckradar.com/about (Accessed: 27 October 2026).
+
+Feng, F., Yang, Y., Cer, D., Arivazhagan, N. and Wang, W. (2022) ‘Language-agnostic BERT sentence embedding’, *Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, pp. 878–891. Available at: https://doi.org/10.18653/v1/2022.acl-long.62.
+
+Lewis, P. et al. (2020) ‘Retrieval-augmented generation for knowledge-intensive NLP tasks’, *Advances in Neural Information Processing Systems*, 33, pp. 9459–9474. Available at: https://arxiv.org/abs/2005.11401.
+
+Muda, R., Pennycook, G., Hamerski, D. and Białek, M. (2023) ‘People are worse at detecting fake news in their foreign language’, *Journal of Experimental Psychology: Applied*, 29(4), pp. 712–724. Available at: https://doi.org/10.1037/xap0000475.
+
+OpenErrata (n.d.) *AI-powered fact-checking for the web*. Available at: https://openerrata.com/ (Accessed: 27 October 2026).
+
+Quelle, D., Cheng, C.Y., Bovet, A. et al. (2025) ‘Lost in translation: using global fact-checks to measure multilingual misinformation prevalence, spread, and evolution’, *EPJ Data Science*, 14, article 22. Available at: https://doi.org/10.1140/epjds/s13688-025-00520-6.
+
 
