@@ -1,4 +1,4 @@
-# Week 4 Blog Post 1: Ideation, Persona, Scenario & Scope
+# Week 3 Blog Post 1: Ideation, Persona, Scenario & Scope
 
 ## Project summary
 
