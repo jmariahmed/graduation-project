@@ -10,13 +10,13 @@ Because ClaimTrail involves both developing a functional technology and investig
 
 **Research through Design**
 
-Research through Design involves using the process of designing and developing an artefact to generate knowledge. It is appropriate for ClaimTrail because the project investigates how an interactive visual interface can help people understand the development of online information.
+Research through Design involves using the process of designing and developing an artefact to generate knowledge. Zimmerman, Forlizzi and Evenson (2007) explain how design activities can contribute to interaction design research by exploring problems through the creation of new products and experiences.
 
-Through sketching, prototyping and testing different interface approaches, I can explore how users interact with multilingual claims, evidence and source relationships. The design process will therefore contribute to answering the research question rather than simply producing a finished product.
+This approach is appropriate for ClaimTrail because the project investigates how an interactive visual interface can help people understand the development of online information. Through sketching, prototyping and testing different interface approaches, I can explore how users interact with multilingual claims, evidence and source relationships. The design process will therefore contribute to answering the research question rather than simply producing a finished product.
 
 **Design Science Research**
 
-Design Science Research focuses on creating and evaluating an artefact designed to address a particular problem. Hevner et al. (2004) describe how the construction and evaluation of an artefact can contribute to research.
+Design Science Research focuses on creating and evaluating an artefact designed to address a particular problem. Hevner et al. (2004) describe how the construction and evaluation of an artefact can contribute to research and generate knowledge about both the problem and its potential solution.
 
 This is relevant to ClaimTrail because the project involves developing a Chrome extension that combines multilingual retrieval, AI-assisted analysis and interactive visualisation. The methodology will allow me to establish design requirements, build a working prototype and evaluate whether it addresses the identified user needs.
 
@@ -61,11 +61,11 @@ To evaluate whether ClaimTrail achieves its intended purpose, I will use both te
 | Claim comparison | Whether the system identifies meaningful differences in wording and meaning |
 | Multilingual performance | Whether related claims can be retrieved and explained across the selected test languages |
 | User comprehension | Whether participants can identify changes in a claim and understand its supporting evidence |
-| Usability | Task completion, navigation difficulties and participant feedback |
+| Usability | Task completion, navigation difficulties, participant feedback and System Usability Scale (SUS) scores |
 
 For retrieval testing, I will use a small collection of claims with known relevant sources and assess the proportion of relevant results among the top five retrieved results. For user testing, I will examine whether participants can identify the earliest available source, recognise differences between claim versions and distinguish documented source relationships from possible semantic connections.
 
-These measures will help evaluate both the technical performance and the usefulness of the interface.
+I also plan to use the System Usability Scale (SUS), a standardised ten-item questionnaire developed by Brooke (1996), to gather participants' overall perceptions of the prototype's usability following testing. Combining this with task-based observations and participant feedback will provide a broader understanding of the user experience.
 
 ## 5. Iterative Development
 
@@ -109,4 +109,8 @@ The overall aim is to create a prototype that is not only technically functional
 
 ## References
 
+Brooke, J. (1996) ‘SUS: A quick and dirty usability scale’, in Jordan, P.W., Thomas, B., Weerdmeester, B.A. and McClelland, I.L. (eds.) *Usability Evaluation in Industry*. London: Taylor & Francis, pp. 189–194. Available at: https://doi.org/10.1201/9781498710411-35.
+
 Hevner, A.R., March, S.T., Park, J. and Ram, S. (2004) ‘Design science in information systems research’, *MIS Quarterly*, 28(1), pp. 75–105. Available at: https://doi.org/10.2307/25148625.
+
+Zimmerman, J., Forlizzi, J. and Evenson, S. (2007) ‘Research through design as a method for interaction design research in HCI’, in *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems*. New York: ACM, pp. 493–502. Available at: https://doi.org/10.1145/1240624.1240704.
