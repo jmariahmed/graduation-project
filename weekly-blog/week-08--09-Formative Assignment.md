@@ -6,5 +6,5 @@ It also introduces the proposed technical architecture, including multilingual i
 
 The purpose of this presentation is to communicate my progress so far, reflect on the decisions made during the research and design process, and identify the key challenges and areas requiring further development before the final project.
 
-[ClaimTrail_Formative_Presentation.pptx](https://github.com/user-attachments/files/34887646/ClaimTrail_Formative_Presentation.pptx)
+[ClaimTrail_Formative_Presentation_Weeks_1-7_FINAL_STACK.pptx](https://github.com/user-attachments/files/34887998/ClaimTrail_Formative_Presentation_Weeks_1-7_FINAL_STACK.pptx)
 Presentation covering project development, research and initial prototypes (Weeks 1–7).
