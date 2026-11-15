@@ -10,7 +10,7 @@ I focused on understanding the interface structure and user journey before movin
 
 <img width="1536" height="1024" alt="ClaimTrail Multilingual Fact-Checking Workflow" src="https://github.com/user-attachments/assets/d4dc7626-c880-4fc4-96ba-390d8647cb32" />
 
-I started with a low-fidelity wireframe, recreated in Figma, to establish the basic layout and information hierarchy of ClaimTrail. I divided the interface into four main stages:
+I started with a low-fidelity wireframe, created in Figma, to establish the basic layout and information hierarchy of ClaimTrail. I divided the interface into four main stages:
 
 1. **Select:** The user highlights a statement within an online article and captures it using ClaimTrail.
 2. **Sources:** The extension displays related versions of the claim across different languages, alongside source names and dates.
